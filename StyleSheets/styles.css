@@ -189,6 +189,7 @@ a {
 .flex-grid {
     display: flex;
     padding: 1em;
+    
 }
 .flex-grid-item {
     width: 25%;
@@ -280,4 +281,32 @@ a {
 }
 .footer-line-1{
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:768px){
+    #home .navbar-content  {
+        flex-direction: column;
+        height: 150px;
+        padding: 1em;
+        justify-content: space-around;
+    }
+    .flex-icons {
+        flex-direction: column;
+       
+    }
+    .flex-icon-items {
+        border-bottom: 1px solid #333;
+    }
+    .solutions .columns{
+        flex: 100%;
+        max-width: 100%;
+        
+    }
+    .flex-grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flex-grid-item {
+        width: 100%;
+    }
 }
